@@ -1,13 +1,20 @@
 /* Styling for the whole header */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 h1 {
     position: relative; /* Ensures proper positioning of content */
-    background-image:  url('/HEADER_BG.jpg'); /* Path to your background image */
+    width: 100%;
+    height: 100vh;
+    background-image:  url('UPDATED_HEADER_BG.png'); /* Path to your background image */
     background-size: cover; /* Makes sure the image covers the entire header */
     background-position: center; /* Centers the image */
     color: white; /* Makes the text white */
     padding: 100px 0; /* Adds vertical padding to the header */
-    text-align: center; /* Centers the text horizontally */
-    margin: 0; /* Removes any default margin */
+    text-align: left; /* Centers the text horizontally */
+    margin: 0; /* Removes any default margin */ 
 }
 
 /* Styling for the .crispr-text span */
@@ -26,7 +33,7 @@ h1 {
 nav {
     background-color: #333; /* Dark background for the navbar */
     padding: 10px 0;
-    text-align: center;
+    text-align: right;
 }
 
 nav a {
