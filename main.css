@@ -91,7 +91,7 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-/* Prevent horizontal overflow for the entire page */
+
 body {
     overflow-x: hidden;  /* Ensure the page doesn't overflow horizontally */
     margin: 0;           /* Remove default body margin */
@@ -113,7 +113,7 @@ body {
     min-width: 200px;     /* Minimum width of each box */
     height: 250px;         /* Allow the height to adjust based on content */
     background-color: rgba(16, 35, 45, 0.7); /* Background color */
-    color: #c1f8ff;       /* Text color */
+    color: white;       /* Text color */
     display: flex;        /* Flexbox inside each box */
     flex-direction: column;
     align-items: center;  /* Horizontally center text */
@@ -131,7 +131,7 @@ body {
     position: relative;   /* Ensures proper positioning of content */
     width: 100%;          /* Full width */
     height: 85vh;         /* Adjust the height */
-    background-image:  url('2ND-BG.png'); /* Path to your background image */
+    background-image:  url('2ND-BGf.png'); /* Path to your background image */
     background-size: cover; /* Makes sure the image covers the entire header */
     background-position: center; /* Centers the image */
     color: white;         /* Makes the text white */
@@ -144,5 +144,128 @@ body {
     text-align: center;
     font-weight: 600;
     font-size: 35px;
-    color: #c1f8ff;
+    color: white;
+}
+/* Timeline Container */
+.timeline-container {
+    padding: 60px 10%;
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow: hidden; /* Prevents any overflow issues */
+}
+
+.timeline-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Timeline Wrapper */
+.timeline {
+    display: flex;
+    justify-content: space-evenly; /* Ensures items are evenly spaced */
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;  /* Allows items to wrap if necessary */
+    width: 100%;
+    gap: 20px;  /* Space between the timeline items */
+}
+
+/* Timeline Item Styling */
+.timeline-item {
+    position: relative;
+    width: 16%;  /* Width of each item adjusted */
+    text-align: center;
+    padding: 20px;
+    flex-shrink: 0;  /* Prevents shrinking of the items */
+}
+
+.timeline-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #1e90ff;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+/* Content Styling */
+.timeline-content {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.timeline-item:hover .timeline-icon {
+    background-color: #10232d;
+}
+
+.timeline-item:hover .timeline-content {
+    transform: translateY(-10px);
+}
+
+/* Connecting Line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #1e90ff;
+    z-index: 0;
+}
+
+/* Timeline Item Content */
+.timeline-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.timeline-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Design: For Smaller Screens */
+@media (max-width: 1024px) {
+    .timeline {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+
+    .timeline-item {
+        width: 90%;  /* Increase item width on smaller screens */
+        margin-bottom: 40px;  /* Add spacing between items */
+    }
+
+    .timeline-item .timeline-icon {
+        margin: 0 auto 15px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .timeline-item .timeline-icon {
+        margin: 0 auto 20px auto;
+    }
 }
