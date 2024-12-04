@@ -164,14 +164,21 @@ body {
     color: white;
 }
 .timeline-container {
-    position: relative; /* Ensures proper positioning of content */
+    position: relative;
     width: 100%;
-    height: 100vh;
-    background-image:  url('ALT-TIMELINE-BG.png'); /* Path to your background image */
-    background-size: cover; /* Makes sure the image covers the entire header */
-    background-position: center; /* Centers the image */
-    color: white; /* Makes the text white */
-    padding: 140px 70px; /* Adds vertical padding to the header */
-    text-align: left; /* Centers the text horizontally */
-    margin: 0; /* Removes any default margin */ 
+    height: auto; /* This allows the container's height to adjust based on content */
+    min-height: 100vh; /* Ensures a minimum height of 100vh, but will adjust based on content */
+    background-image: url('TIMELINE-BG-F.png');
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: top center; /* Ensures the top of the image stays visible */
+    padding: 60px 70px; /* You can adjust this padding */
+    text-align: left;
+    margin: 0;
+}
+.timeline-title {
+    font-family:'Poppins', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1;
+    color: #10232d;
 }
