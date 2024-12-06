@@ -337,6 +337,12 @@ body {
     border-radius: 10px;
 }
 
+.limitation-ethical {
+    font-size: 36px;
+    color: #c1f8ff;
+    margin-bottom: 20px;
+}
+
 .center-left {
     text-align: left;
     margin-left: 10%;
