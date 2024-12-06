@@ -433,38 +433,51 @@ p {
 
 /* Future Impact Section */
 .crispr-future {
-    background-color: #0d1b2a;
+    background: url('future-background.png') no-repeat center center;
+    background-size: cover;
     color: white;
-    padding: 60px 0;
+    padding: 80px 0;
     font-family: 'Poppins', sans-serif;
-}
-
-.subtitle {
-    font-size: 18px;
-    color: #c1f8ff;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 10%;
 }
 
 .future-layout {
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
-    gap: 20px;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .text-content {
-    width: 50%;
+    width: 45%;
     font-size: 16px;
     line-height: 1.8;
+    text-align: center;
+    padding: 60px 20px; 
     color: #e0e0e0;
+    background-color: rgba(13, 27, 42, 0.8); 
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text-content h2 {
+    font-size: 28px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.text-content p.subtitle {
+    font-size: 18px;
+    color: #c1f8ff;
+    margin-bottom: 20px;
 }
 
 .services-grid {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 45%;
     gap: 20px;
 }
 
