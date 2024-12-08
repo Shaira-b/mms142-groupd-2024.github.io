@@ -595,43 +595,55 @@ p{
 
 .future-layout {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.text-content {
-    width: 45%;
-    font-size: 16px;
-    line-height: 1.8;
+.image-container {
+    flex: 1 1 45%; 
     text-align: center;
-    padding: 60px 20px; 
-    color: #e0e0e0;
-    background-color: rgba(13, 27, 42, 0.8); 
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.text-content {
+    flex: 1 1 45%; 
+    text-align: center; 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size:100px;
 }
 
 .text-content h2 {
-    font-size: 28px;
-    color: #e0e0e0;
+    font-size: 50px; 
+    font-weight: 900;
+    text-transform: uppercase;
     margin-bottom: 20px;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
 }
 
-.text-content p.subtitle {
+.text-content .subtitle {
     font-size: 18px;
     color: #c1f8ff;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
+/* Styling for the service boxes */
 .services-grid {
     display: flex;
     flex-direction: column;
-    width: 45%;
     gap: 20px;
+    text-align: left;
 }
 
 .service-box {
