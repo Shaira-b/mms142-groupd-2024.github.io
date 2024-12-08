@@ -586,7 +586,7 @@ p{
 
 /* Future Impact Section */
 .crispr-future {
-    background-color: #202a2e;
+    background-color: #07141a;
     background-size: cover;
     color: white;
     padding: 80px 0;
@@ -607,6 +607,8 @@ p{
 .image-container {
     flex: 1 1 45%; 
     text-align: center;
+    width: 50px;
+    height: 50px;
 }
 
 .image-container img {
