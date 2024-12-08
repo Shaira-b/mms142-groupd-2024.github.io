@@ -144,7 +144,7 @@ body {
 }
 
 /* Styling for the background section */
-.The-science {
+.the-science {
     position: relative;  
     width: 100%;        
     height: 85vh;      
@@ -157,7 +157,7 @@ body {
 }
 
 /* Styling for the title */
-.Title {
+.title {
     text-align: center;
     font-weight: 600;
     font-size: 35px;
