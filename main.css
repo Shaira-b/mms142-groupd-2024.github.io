@@ -130,6 +130,11 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
+.box b {
+    margin-bottom: 10px; 
+    display: inline-block; 
+    font-size: 15px; 
+}
 
 .box:hover {
     transform: scale(1.1);  
