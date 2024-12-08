@@ -674,7 +674,7 @@ p{
 
 /* Future Summary Section */
 .future-summary-section {
-    background-color: #0d1b2a;
+    background: url('summary-background.png') no-repeat center center;
     background-size: cover;
     color: white;
     padding: 60px 0;
