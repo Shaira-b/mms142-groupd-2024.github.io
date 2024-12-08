@@ -607,8 +607,7 @@ p{
 .image-container {
     flex: 1 1 45%; 
     text-align: center;
-    width: 100px;
-    height: 100px;
+    margin-bottom: 20px;
 }
 
 .image-container img {
