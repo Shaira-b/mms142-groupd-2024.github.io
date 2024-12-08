@@ -586,7 +586,7 @@ p{
 
 /* Future Impact Section */
 .crispr-future {
-    background: url('future-background.png') no-repeat center center;
+    background-color: #202a2e;
     background-size: cover;
     color: white;
     padding: 80px 0;
