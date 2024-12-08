@@ -659,6 +659,13 @@ p{
     color: #e0e0e0;
 }
 
+/* Set the image as the background */
+.text-with-background {
+     background-image: url('CRISPR FUTURE IMPACT.PNG); /* Replace with your image URL */
+     background-size: cover; /* Cover the entire element */
+     background-position: center; /* Center the image */
+     background-repeat: no-repeat; /* Avoid repeating the image */
+
 /* Future Summary Section */
 .future-summary-section {
     background: url('summary-background.png') no-repeat center center;
