@@ -565,6 +565,13 @@ p{
     margin: 0;
 }
 
+/* The Science Behind the Breakthrough */
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Future Impact Section */
 .crispr-future {
     background: url('future-background.png') no-repeat center center;
